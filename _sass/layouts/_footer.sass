@@ -1,0 +1,80 @@
+.footer
+    width: 100%
+    // background: darken($brand_light, 20%)
+    background: $brand_sec
+    box-shadow: 2px 0px 3px rgba($brand_main, 0.5)
+
+    &__section
+        width: 100%
+        display: flex
+        justify-content: space-between
+        padding: 1rem 0 1rem 0
+
+        & > div:first-child
+            width: 60%
+
+        & > div:last-child
+            width: 25%
+
+        & > div
+            width: 15%
+
+        & > div:not(:last-child)
+            padding-right: 1.7rem
+
+    &__extra
+        display: flex
+        align-items: center
+        flex-direction: column
+        padding: 1rem 0 1rem 0
+
+        & > .social > ul
+            list-style: none
+            padding: 0
+            margin: 0
+            display: flex
+
+            & > li:not(:last-child)
+                padding-right: 1.5rem
+
+            & svg
+                width: 30px
+                height: 30px
+                fill: $brand_main
+
+            & svg:hover
+                fill: $brand_light
+                transition: .3s ease all
+
+    &__links
+        list-style: none
+        padding: 0
+        margin-left: 0
+
+        & > li > a
+            color: $brand_main
+            text-decoration: none
+            transition: .3s ease all
+
+            &:hover
+                color: $brand_light
+                transition: .3s ease all
+
+        & > li:not(:last-child)
+            padding-bottom: .5rem
+.copyright
+    text-align: center
+
+@include media-query($on-palm)
+    .footer
+        &__section
+            flex-direction: column
+            align-items: center
+
+            & > div:not(:last-child)
+                padding-bottom: 1rem
+                padding-right: 0
+
+            & > div
+                width: 100% !important
+                text-align: center

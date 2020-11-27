@@ -1,0 +1,215 @@
+/* latin */
+@font-face
+  font-family: 'Nerko One'
+  font-style: normal
+  font-weight: 400
+  font-display: swap
+  src: url(https://fonts.gstatic.com/s/nerkoone/v1/m8JQjfZSc7OXlB3ZMOjDd5RA.woff2) format('woff2')
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+
+@font-face
+  font-family: 'Sansita Swashed'
+  font-style: normal
+  font-weight: 500
+  font-display: swap
+  src: url(https://fonts.gstatic.com/s/sansitaswashed/v1/BXR8vFfZifTZgFlDDLgNkBydPKTt3pVCeYWqJnZSW4ZpXT0few.woff2) format('woff2')
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+
+@font-face
+  font-family: 'Comfortaa'
+  font-style: normal
+  font-weight: 600
+  font-display: swap
+  src: url(https://fonts.gstatic.com/s/comfortaa/v29/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4bbLDrMfIA.woff2) format('woff2')
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+
+body
+  background: $brand_sec
+  color: $brand_main
+  margin: 5rem 0 0 0
+  padding: 0
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  min-height: calc( 100vh - 13vh )
+  font-family: sans-serif, Arial, Helvetica
+
+main
+  flex-grow: 1
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Sansita Swashed', sans-serif
+
+h1
+  color: $brand_light
+  @include relative-font-size(2.7)
+
+h2
+  @include relative-font-size(2.4)
+
+h3
+  @include relative-font-size(2.1)
+
+h4
+  @include relative-font-size(1.9)
+
+h5
+  @include relative-font-size(1.7)
+
+h6
+  @include relative-font-size(1.5)
+
+@include media-query($on-phone)
+  h1
+    @include relative-font-size(2.2)
+
+  h2
+    @include relative-font-size(2.05)
+
+  h3
+    @include relative-font-size(1.9)
+
+  h4
+    @include relative-font-size(1.75)
+
+  h5
+    @include relative-font-size(1.6)
+
+  h6
+    @include relative-font-size(1.5)
+
+a
+  text-decoration: none
+  color: $brand_main
+  transition: .3s ease all
+  &:hover
+    color: $brand_light
+    transition: .3s ease all
+
+.svg-icon
+  width: 1.3rem
+  height: 1.3rem
+
+blockquote
+  color: darken($brand_main, 10%)
+  font-style: italic
+  border-left: 5px solid
+  margin-left: 0
+  padding-left: 3rem
+
+/**
+ * Images
+ */
+img
+  max-width: 100%
+  vertical-align: middle
+
+/**
+ * Figures
+ */
+figure
+  margin: 0
+  & > img
+    display: block
+
+figcaption
+  @include relative-font-size(.5)
+
+/**
+ * Lists
+ */
+ul,
+ol
+  margin-left: $spacing-unit
+
+li
+  > ul,
+  > ol
+    margin-bottom: 0
+
+/**
+ * Code formatting
+ */
+pre,
+code
+  color: $brand_sec
+  @include relative-font-size(0.9375)
+
+*:not(pre) > code
+  padding: 1px 5px
+  border-radius: 3px
+  color: #ffc38b
+  background-color: lighten($brand_sec, 10%)
+  margin: 0 5px
+
+.highlight
+  > pre
+    width: 100%
+    overflow: hidden
+    border-radius: 7px
+    position: relative
+    background-color: $brand_light
+
+    // code language badge
+    &:before
+      content: attr(data-lang)
+      color: #fff
+      background-color: #ff4e00
+      padding: .2rem .5em
+      border-radius: 0 7px
+      text-transform: uppercase
+      text-align: center
+      min-width: 32px
+      min-height: 15px
+      display: inline-block
+      position: absolute
+      right: 0
+
+    > code
+      box-sizing: border-box
+      width: 100%
+      overflow: auto
+      display: inline-block
+      padding: 20px!important
+      background-color: transparent
+      border: 0
+
+    table, pre
+      margin-bottom: 0
+
+      .gutter, .code
+        padding: 6px
+        border: none
+
+/**
+ * Tables
+ */
+table
+  margin-bottom: $spacing-unit
+  width: 100%
+  text-align: $table-text-align
+  color: darken($brand_main, 10%)
+  border-collapse: collapse
+
+  tr
+    &:nth-child(even)
+      background-color: lighten($brand_sec, 6%)
+
+  th,
+  td
+    padding: ($spacing-unit / 3) ($spacing-unit / 2)
+
+  th
+    background-color: lighten($brand_sec, 3%)
+    border: 1px solid darken($brand_main, 4%)
+    border-bottom-color: darken($brand_main, 12%)
+
+  td
+    border: 1px solid $brand_main
+
+// mermaid
+img.mermaid
+  background: lighten($brand_sec, 15%)
+  overflow: hidden
+  border-radius: 7px
+  padding: 7px 0 7px 0

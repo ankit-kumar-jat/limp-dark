@@ -1,0 +1,107 @@
+.navbar
+    z-index: 10
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-height: 13vh
+    position: fixed
+    width: 100%
+    background: $brand_sec
+    box-shadow: 0 2px 3px -2px rgba($brand_main, 0.5)
+    top: 0
+    transition: 0.3s ease all
+
+.logo
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif
+    font-size: 2.4rem
+    text-transform: uppercase
+    letter-spacing: 2px
+    color: $brand_main
+    margin: 0
+    transition: 0.3s ease all
+    &:hover
+        color: $brand_light
+        animation: .3s ease all
+
+.nav-links
+    display: flex
+    transition: 0.3s ease all
+
+    li
+        list-style-type: none
+
+    a
+        text-decoration: none
+        color: $brand_main
+        font-size: 1.3rem
+        margin-left: 1.5rem
+        position: relative
+
+    a::after
+        position: absolute
+        content: ""
+        bottom: -4px
+        left: 0
+        height: 2px
+        width: 0%
+        background-color: $brand_light
+        display: block
+
+    a:hover
+        color: $brand_light
+        transition: 0.3s ease all
+
+    a:hover::after
+        width: 100%
+        transition: 0.3s ease all
+
+.nav-links.nav-active
+    transform: translateX(0%) !important
+
+.hamburger-menu
+    cursor: pointer
+    display: none
+    transition: 0.3s ease all
+
+    div
+        width: 30px
+        height: 4px
+        background-color: $brand_main
+        margin: 6px
+        border-radius: 10px
+        transition: 0.3s ease all
+
+.navbar.sticky
+    background: $brand_sec
+    transition: 0.3s ease all
+    min-height: 10vh
+
+@media (max-width: 725px)
+    .navbar
+        .nav-links
+            position: absolute
+            top: 0
+            left: 0
+            height: 100vh
+            width: 300px
+            background: $brand_sec
+            margin: 0
+            padding: 0
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            transform: translateX(-100%)
+            z-index: 10
+
+        .hamburger-menu
+            display: block
+            z-index: 11
+
+        .bar-change .bar1
+            transform: rotate(-45deg) translate(-9px, 6px)
+
+        .bar-change .bar2
+            opacity: 0
+
+        .bar-change .bar3
+            transform: rotate(45deg) translate(-9px, -5px)

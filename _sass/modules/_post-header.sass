@@ -1,0 +1,27 @@
+.post-header
+    padding-bottom: 1.5rem
+
+    & > .post-tags
+        display: inline-block
+
+        & > .post-tag
+            color: $brand_light
+            text-decoration: none
+            border: 1px solid
+            padding: 2px 4px
+            border-radius: 3px
+            transition: color 0.3s
+            margin: 0 12px 0 0
+
+        & > .post-tag:hover
+            color: darken($brand_main, 10%)
+            transition: .3s ease all
+
+    & > .post-meta
+        color: darken($brand_main, 10%)
+
+    & > .post-meta svg
+        fill: darken($brand_main, 10%)
+        position: relative
+        top: 4px
+        z-index: -1

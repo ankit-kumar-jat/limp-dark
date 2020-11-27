@@ -1,0 +1,57 @@
+# site title
+title: Limp
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+author: Limp # author name for seo
+email: your-email@domain.com
+
+# Serve the website from the given base URL.
+baseurl: "/limp" # the subpath of your site, e.g. /blog
+url: "https://ankitkumarjat.me" # the base hostname & protocol for your site, e.g. http://example.com
+# logo: "" # the logo for your site
+
+# Navbar
+# specify path of pages you want to show in navbar
+# write in same order that you want to show
+navbar_pages:
+  - index.html
+  - about.html
+
+# Pagination
+paginate: 5
+
+#optimization
+#compress html
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: true
+  startings: [html, head, body]
+
+# compress sass
+sass:
+  style: compressed
+
+# Serve Command OptionsPermalink
+
+# port: 4000 # 4000 is default
+
+# Reload a page automatically on the browser when its content is edited.
+livereload: true
+
+markdown: kramdown
+kmarkdown:
+  input: GFM
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship

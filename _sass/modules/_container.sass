@@ -1,0 +1,16 @@
+.container
+    padding: 0 1.5rem 0 1.5rem
+    width: 100%
+    box-sizing: border-box
+
+@include media-query($on-laptop)
+    .container
+        padding: 0 1rem 0 1rem
+
+@include media-query($on-palm)
+    .container
+        padding: 0 .7rem 0 .7rem
+
+@include media-query($on-phone)
+    .container
+        padding: 0 .4rem 0 .4rem
