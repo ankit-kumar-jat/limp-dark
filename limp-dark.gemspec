@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "limp"
+  spec.name          = "limp-dark"
   spec.version       = "0.1.0"
   spec.authors       = ["ankit-kumar-jat"]
   spec.email         = ["ankjat066@gmail.com"]
@@ -13,10 +13,10 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config.yml)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 4.1"
-  spec.add_runtime_dependency "jekyll-paginate"
-  spec.add_runtime_dependency "jekyll-sitemap"
-  spec.add_runtime_dependency "jekyll-seo-tag"
-  spec.add_runtime_dependency "bundler"
-  spec.add_runtime_dependency "jekyll-spaceship"
+  spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
+  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.7"
+  spec.add_runtime_dependency "bundler", "~> 2.1"
+  spec.add_runtime_dependency "jekyll-spaceship", "~> 0.9"
 
 end

@@ -1,19 +1,19 @@
 # Limp
 
-:fire: limp-dark theme for elegant writers with modern flat style and beautiful dark background :fire:.
+:fire: Limp theme for elegant writers with modern flat style and beautiful dark background :fire:.
 
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "limp-dark"
+gem "Limp"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: limp-dark
+theme: Limp
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install limp-dark
+    $ gem install Limp
 
 ## Usage
 
