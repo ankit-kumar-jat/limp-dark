@@ -9,7 +9,7 @@ author: Limp # author name for seo
 email: your-email@domain.com
 
 # Serve the website from the given base URL.
-baseurl: "/limp" # the subpath of your site, e.g. /blog
+baseurl: "/limp-demo" # the subpath of your site, e.g. /blog
 url: "https://ankitkumarjat.me" # the base hostname & protocol for your site, e.g. http://example.com
 # logo: "" # the logo for your site
 
@@ -18,10 +18,26 @@ url: "https://ankitkumarjat.me" # the base hostname & protocol for your site, e.
 # write in same order that you want to show
 navbar_pages:
   - index.html
-  - about.html
+  - archives.html
+  - categories.html
+  - about.md
 
 # Pagination
 paginate: 5
+
+# comments
+
+# Disqus comments
+# disqus:
+#   shortname: "Your Disqus username"
+
+# Gitment comments
+gitment:
+  username: "hackersjugadBot"
+  repo: "gitment"
+  client_id: "3319a49fdeaee1884f29"
+  client_secret: "0baa1ca836116b44cb2ef598e4439fcbc18ac95a"
+  redirect_uri: "https://ankitkumarjat.me/limp-demo/" # If you use a custom domain name
 
 #optimization
 #compress html
@@ -41,7 +57,7 @@ sass:
 
 # Serve Command OptionsPermalink
 
-# port: 4000 # 4000 is default
+port: 4000 # 4000 is default
 
 # Reload a page automatically on the browser when its content is edited.
 livereload: true

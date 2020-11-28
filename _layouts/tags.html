@@ -1,0 +1,26 @@
+---
+layout: page
+---
+
+<style>
+  h2::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -85px; 
+  height: 85px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+</style>
+
+{%- if site.posts.size > 0 -%}
+
+  {%- include functions.html func='log' level='debug' msg='Get tags value' -%}
+  {%- include functions.html func='get_tags' -%}
+  {% assign tags = return %}
+
+  {% assign keys = tags %}
+  {% assign field = 'tags' %}
+  {%- include views/segments.html -%}
+
+{%- endif -%}

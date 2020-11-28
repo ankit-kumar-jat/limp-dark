@@ -5,16 +5,26 @@ main
 
     & > .main
         padding-right: 1.5rem
-        width: 70%
+        width: 60%
 
     & > .sidebar
         width: 30%
+
+@include media-query(1150px)
+    main
+        & > .main
+            width: 70%
 
 @include media-query($on-laptop)
     main
         & > .main
             padding: 0
-            width: 100%
+            width: 80%
         & > .sidebar
             width: 0px
             display: none
+
+@include media-query($on-palm)
+    main
+        & > .main
+            width: 100%

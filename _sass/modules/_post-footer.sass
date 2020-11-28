@@ -1,0 +1,52 @@
+// /*Posts misc
+.post-nav
+    display: flex
+    justify-content: space-between
+    padding: 31px 0 0
+    @include media-query($on-phone)
+        flex-direction: column
+
+    & a
+        margin-bottom: 15px
+
+    & > a.next
+        text-align: right
+
+.post-nav, .post-related
+    a
+        line-height: 15px
+        color: #ec8322
+        min-width: 50%
+        @include relative-font-size(1.125)
+
+        &:hover
+            color: #f5eae1
+
+.post-related
+    margin-bottom: 2rem
+
+    & > ol
+        padding: 1rem
+
+        &> li
+            margin-bottom: 7px
+
+.previous:before
+    content: ' '
+    border: solid #ec8322
+    border-width: 0 2px 2px 0
+    display: inline-block
+    padding: 4px
+    margin-right: 8px
+    transform: rotate(135deg)
+    -webkit-transform: rotate(135deg)
+
+.next:after
+    content: ' '
+    border: solid #ec8322
+    border-width: 0 2px 2px 0
+    display: inline-block
+    padding: 4px
+    margin-left: 8px
+    transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)

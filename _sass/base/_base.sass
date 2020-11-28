@@ -33,9 +33,14 @@ body
   justify-content: space-between
   min-height: calc( 100vh - 13vh )
   font-family: sans-serif, Arial, Helvetica
+  @include relative-font-size(1.07)
 
 main
   flex-grow: 1
+
+p
+  line-height: 1.3
+  @include relative-font-size(1.05)
 
 h1, h2, h3, h4, h5, h6
   font-family: 'Sansita Swashed', sans-serif
@@ -133,7 +138,7 @@ li
 pre,
 code
   color: $brand_sec
-  @include relative-font-size(0.9375)
+  // @include relative-font-size(0.9375)
 
 *:not(pre) > code
   padding: 1px 5px

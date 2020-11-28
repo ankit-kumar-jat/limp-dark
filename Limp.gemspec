@@ -6,11 +6,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["ankit-kumar-jat"]
   spec.email         = ["ankjat066@gmail.com"]
 
-  spec.summary       = "Lightning fast jekyll blog theme."
+  spec.summary       = "Lightning fast dark jekyll blog theme."
   spec.homepage      = "https://ankitkumarjat.me/limp"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config.yml)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 4.1"
   spec.add_runtime_dependency "jekyll-paginate"

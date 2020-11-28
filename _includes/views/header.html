@@ -1,10 +1,12 @@
 <header>
     <nav class="navbar container">
-        {% if site.logo %}
-        <img src="{{ site.logo | relative_url }}" alt="{{site.title}}">
-        {% else %}
-        <h1 class="logo">{{site.title}}</h1>
-        {% endif %}
+        <a href="{{site.baseurl}}/">
+            {% if site.logo %}
+            <img src="{{ site.logo | relative_url }}" alt="{{site.title}}">
+            {% else %}
+            <h1 class="logo">{{site.title}}</h1>
+            {% endif %}
+        </a>
 
         <ul class="nav-links">
         {%- assign default_paths = site.pages | where: "dir", "/" | map: "path" -%}

@@ -1,0 +1,16 @@
+  <div id="gitment_thread"></div>
+  <link rel="stylesheet" href="{{'/assets/css/gitment.css' | relative_url}}"/>
+  <link rel="stylesheet" href="{{'/assets/css/gitment.dark.css' | relative_url}}"/>
+  <script src='{{ "/assets/js/gitment.browser.js" | relative_url }}'></script>
+  <script>
+    var gitment = new Gitment({
+      id: '{{ page.id }}',
+      owner: '{{ site.gitment.username }}',
+      repo: '{{ site.gitment.repo }}',
+      oauth: {
+        client_id: '{{ site.gitment.client_id }}',
+        client_secret: '{{ site.gitment.client_secret }}',
+      },
+    });
+    gitment.render('gitment_thread')
+  </script>

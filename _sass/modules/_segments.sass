@@ -1,0 +1,39 @@
+// archives page segments
+
+/**
+ * Segments page
+ */
+.page-segments
+
+    &__list
+        list-style: none
+
+        & > li
+            margin-bottom: 5px
+            margin-left: 1rem
+
+            & > .post-meta
+                color: darken($brand_main, 10%)
+
+.segment-name
+    margin-bottom: 16px
+    position: relative
+    @include relative-font-size(1.7)
+
+    &:not(:first-child)
+        margin-top: 28px
+
+    &:hover:before
+        content: '#'
+        left: -1em
+        position: absolute
+
+@include media-query($on-palm)
+    .page-segments
+        &__list
+            margin: 0
+
+@include media-query($on-phone)
+    .page-segments
+        &__list
+            padding: 0

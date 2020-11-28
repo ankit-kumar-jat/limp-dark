@@ -3,14 +3,26 @@
     width: 100%
     box-sizing: border-box
 
+.post-container
+    width: 0%
+    box-sizing: border-box
+
+@include media-query(1150px)
+    .post-container
+        width: 0%
+
 @include media-query($on-laptop)
     .container
         padding: 0 1rem 0 1rem
+    .post-container
+        width: 0%
 
 @include media-query($on-palm)
     .container
         padding: 0 .7rem 0 .7rem
+    .post-container
+        display: none
 
-@include media-query($on-phone)
-    .container
-        padding: 0 .4rem 0 .4rem
+// @include media-query($on-phone)
+//     .container
+//         padding: 0 .4rem 0 .4rem
