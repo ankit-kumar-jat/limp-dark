@@ -1,0 +1,80 @@
+/* Dark theme */
+.gitment-header-like-btn,
+.gitment-comment-like-btn {
+  color: #fff;
+  fill: #fff;
+}
+.gitment-container {
+  color: #e7e7e7;
+}
+.gitment-container .gitment-spinner-icon {
+  fill: #aaaaaa;
+}
+.gitment-comment-main,
+.gitment-editor-main {
+  border: 1px solid #f09d51;
+  background-color: #3a3a3a;
+}
+.gitment-editor-main::before,
+.gitment-comment-main::before {
+  border-right-color: #f09d51;
+}
+.gitment-editor-main::after,
+.gitment-comment-main::after {
+  border-right-color: #f09d51;
+}
+.gitment-comment-header {
+  color: #b6b6b6;
+  background-color: #3a3a3a;
+}
+.gitment-editor-header {
+  border-bottom: 1px solid #f09d51;
+}
+a.gitment-comment-name,
+a.gitment-comment-name:visited {
+  color: #b3b3b3;
+}
+.gitment-editor-tab.gitment-selected {
+  color: #cfd8dc;
+  background-color: #535353e6;
+  border-color: #f09d51;
+}
+.gitment-editor-tab {
+  color: #cfd8dc;
+}
+.gitment-comment-body-folded::after {
+  color: #cfd8dc;
+  background: #535353e6;
+}
+.gitment-editor-body textarea {
+  background-color: #535353e6;
+  color: #fff;
+}
+.gitment-editor-body textarea:focus {
+  background-color: #535353e6;
+}
+.gitment-comments-page-item {
+  border: 1px solid #f09d51;
+}
+.gitment-comments-page-item:hover {
+  background-color: #535353e6;
+}
+.gitment-comments-page-item.gitment-selected {
+  background-color: #535353e6;
+}
+.gitment-editor-preview {
+  background-color: #535353e6;
+  color: #fff;
+}
+a.gitment-editor-footer-tip,
+a.gitment-editor-login-link {
+  color: #ec8322;
+}
+button.gitment-editor-submit,
+button.gitment-editor-submit:hover,
+button.gitment-editor-submit:disabled {
+  background-color: #ec8322;
+}
+a.gitment-editor-footer-tip:hover {
+  color: #f5eae1;
+}
