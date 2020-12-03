@@ -6,7 +6,7 @@
 
 ## Demo 👇👇
 
-[LIMP-DARK](https://ankitkumarjat.me/limp/)
+[LIMP-DARK](https://ankitkumarjat.me/limp-dark/)
 
 ## Installation
 
