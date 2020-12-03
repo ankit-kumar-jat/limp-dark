@@ -1,0 +1,40 @@
+div#search-container
+    margin-top: 4vh
+    padding: 5px 10px
+    border-radius: 7px
+    overflow: hidden
+    background: lighten($brand_sec, 3%)
+
+    & > label
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-around
+
+        & > .svg-icon
+            padding: 5px
+            fill: $brand_light
+
+        & > #search-input
+            appearance: none
+            border: $brand_sec 2px solid
+            border-radius: 7px
+            background: lighten($brand_sec, 7%)
+            padding: 5px 10px
+            color: $brand_light
+            font-size: 1em
+            width: auto
+            width: -moz-available
+            width: -webkit-fill-available
+            width: fill-available
+            @include media-query(350px)
+                width: 200px
+
+            &:focus
+                outline: none
+                box-shadow: 0px 0px 5px $brand_main
+
+    & > .search-result
+        padding: 0
+
+        & > li
+            margin-top: .5rem

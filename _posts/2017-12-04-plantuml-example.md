@@ -3,6 +3,7 @@ layout: post
 title: Plantuml example
 categories: example
 tags: [plantuml]
+description: write a short discription (230-255 words) for Search engines.
 ---
 
 ## My First PlantUML

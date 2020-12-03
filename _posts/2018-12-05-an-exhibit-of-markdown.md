@@ -1,6 +1,7 @@
 ---
 layout: post
 title: An exhibit of Markdown
+description: write a short discription (230-255 words) for Search engines.
 subtitle: Each post also has a subtitle
 categories: markdown
 tags: [example, markdown]

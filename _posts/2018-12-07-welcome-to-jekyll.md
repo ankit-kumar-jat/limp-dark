@@ -2,6 +2,7 @@
 layout: post
 title: Welcome to Jekyll!
 subheading: hello world!
+description: write a short discription (230-255 words) for Search engines.
 author: Jeffrey
 categories: jekyll
 banner: https://bit.ly/32PAjtM

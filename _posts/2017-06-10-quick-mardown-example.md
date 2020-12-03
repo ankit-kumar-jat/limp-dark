@@ -3,6 +3,7 @@ layout: post
 title: Quick markdown example
 subtitle: This is a quick markdown example
 categories: markdown
+description: write a short discription (230-255 words) for Search engines.
 tags: [example]
 ---
 

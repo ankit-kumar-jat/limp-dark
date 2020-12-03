@@ -9,7 +9,7 @@ author: Limp # author name for seo
 email: your-email@domain.com
 
 # Serve the website from the given base URL.
-baseurl: "/limp-demo" # the subpath of your site, e.g. /blog
+baseurl: "/limp-dark" # the subpath of your site, e.g. /blog
 url: "https://ankitkumarjat.me" # the base hostname & protocol for your site, e.g. http://example.com
 # logo: "" # the logo for your site
 
@@ -25,6 +25,9 @@ navbar_pages:
 # Pagination
 paginate: 5
 
+# Google analytics
+#google_analytics: UA-172457464-1
+
 # comments
 
 # Disqus comments
@@ -32,11 +35,12 @@ paginate: 5
 #   shortname: "Your Disqus username"
 
 # Gitment comments
+# its demo all info is not correct
 gitment:
-  username: "hackersjugadBot"
-  repo: "gitment"
-  client_id: "3319a49fdeaee1884f29"
-  client_secret: "0baa1ca836116b44cb2ef598e4439fcbc18ac95a"
+  username: "hackersjugadBot" # github username
+  repo: "gitment" # github repository that you want to use for comments
+  client_id: "3319a49fdeaee1884f29" # github client id
+  client_secret: "0baa1ca836116b44cb2ef598e4439fcbc18ac95a" # github client secret
   redirect_uri: "https://ankitkumarjat.me/limp-demo/" # If you use a custom domain name
 
 #optimization
@@ -60,11 +64,15 @@ sass:
 port: 4000 # 4000 is default
 
 # Reload a page automatically on the browser when its content is edited.
-livereload: true
+# livereload: true
+
+# markdown options
 
 markdown: kramdown
-kmarkdown:
-  input: GFM
+# kmarkdown:
+#   input: GFM
+
+# plugins
 
 plugins:
   - jekyll-seo-tag

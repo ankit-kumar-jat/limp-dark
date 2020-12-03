@@ -2,6 +2,7 @@
 layout: post
 title: Mermaid example
 categories: example
+description: write a short discription (230-255 words) for Search engines.
 tags: [mermaid]
 ---
 

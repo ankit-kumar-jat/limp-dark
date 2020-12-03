@@ -70,6 +70,7 @@ a.gitment-editor-footer-tip,
 a.gitment-editor-login-link {
   color: #ec8322;
 }
+button.gitment-editor-submit,
 button.gitment-editor-submit:hover,
 button.gitment-editor-submit:disabled {
   background-color: #ec8322;

@@ -1,6 +1,12 @@
 # Limp
 
+![verion-batch](https://badge.fury.io/rb/limp-dark.svg)    <!--<a href="https://jekyll-themes.com"><img src="https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg" height="20" alt="Jekyll Themes Shield" ></a> -->
+
 :fire: limp-dark theme for elegant writers with modern flat style and beautiful dark background :fire:.
+
+## Demo 👇👇
+
+[LIMP-DARK](https://ankitkumarjat.me/limp/)
 
 ## Installation
 
@@ -29,6 +35,20 @@ Or install it yourself as:
 Chnage configurations on `_config.yml` and `_data/social.yml` file.
 
 This is theme use [spaceship :rocket:](https://github.com/jeffreytse/jekyll-spaceship/blob/master/README.md) Plugin, to take 100% from this got to [:rocket: README](https://github.com/jeffreytse/jekyll-spaceship/blob/master/README.md).
+
+### Responsive tables
+
+To make tables wrap them inside div tage with class="table-wrapper" like following:
+
+```
+<div class="table-wrapper" markdown="block">
+
+| some   | table  | here     |
+|-------:|-------:|---------:|
+| Apple  | Banana |  Orange  |
+
+</div>
+```
 
 ## Contributing
 

@@ -3,6 +3,7 @@ layout: post
 title: Another test markdown
 subtitle: Each post also has a subtitle
 categories: markdown
+description: write a short discription (230-255 words) for Search engines.
 tags: [test]
 ---
 

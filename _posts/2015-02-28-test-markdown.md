@@ -2,6 +2,7 @@
 layout: post
 title: Test markdown
 subtitle: Each post also has a subtitle
+description: you can also write a short post description.
 categories: markdown
 tags: [test]
 ---

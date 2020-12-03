@@ -4,6 +4,7 @@ title: "This post demonstrates post content styles"
 categories: junk
 author: "Bart Simpson"
 meta: "Springfield"
+description: write a short discription (230-255 words) for Search engines.
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
@@ -85,6 +86,8 @@ Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet b
 
 ### Tables
 
+<div class="table-wrapper" markdown="block">
+
 | Title 1               | Title 2               | Title 3               | Title 4               |
 | --------------------- | --------------------- | --------------------- | --------------------- |
 | lorem                 | lorem ipsum           | lorem ipsum dolor     | lorem ipsum dolor sit |
@@ -92,9 +95,15 @@ Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet b
 | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit |
 | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit |
 
+</div>
+
+<div class="table-wrapper" markdown="block">
+
 | Title 1                    | Title 2                                | Title 3                    | Title 4                                |
 | -------------------------- | -------------------------------------- | -------------------------- | -------------------------------------- |
 | lorem                      | lorem ipsum                            | lorem ipsum dolor          | lorem ipsum dolor sit                  |
 | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsum dolor sit amet | lorem ipsum dolor sit                  |
 | lorem ipsum dolor          | lorem ipsum                            | lorem                      | lorem ipsum                            |
 | lorem ipsum dolor          | lorem ipsum dolor sit                  | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur |
+
+</div>
